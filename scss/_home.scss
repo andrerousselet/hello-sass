@@ -1,3 +1,54 @@
-button {
-  @include btn-style(5.4rem, $secondary, $primary)
+.hero-section {
+  margin-top: 11.9rem;
+  padding-top: 3.9rem;
+  background-color: $primary;
+
+  .container {
+    @include flex(row, flex-start, space-between);
+  }
+
+  .text {
+    width: 100%;
+    max-width: 55rem;
+
+    h1 {
+      font-family: "PT Sans", sans-serif;
+      font-weight: 700;
+      font-size: 4.8rem;
+      line-height: 120%;
+      color: white;
+      margin-bottom: 1.6rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 150%;
+      color: white;
+      max-width: 48.8rem;
+      margin-bottom: 3.2rem;
+    }
+
+    button {
+      @include btn-style(5.4rem, $secondary, #482982);
+      margin-bottom: 8.6rem
+    }
+  }
+
+  .know {
+    display: flex;
+    align-items: center;
+
+    span {
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.9rem;
+      color: white;
+      margin-left: 1.6rem
+    }
+  }
+
+  .image {
+    position: relative;
+    top: 3.7rem;
+  }
 }

@@ -73,20 +73,66 @@ header nav ul li a span {
   }
 }
 
-button {
+.hero-section {
+  margin-top: 11.9rem;
+  padding-top: 3.9rem;
+  background-color: #5F3CA1;
+}
+.hero-section .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.hero-section .text {
+  width: 100%;
+  max-width: 55rem;
+}
+.hero-section .text h1 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 120%;
+  color: white;
+  margin-bottom: 1.6rem;
+}
+.hero-section .text p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  color: white;
+  max-width: 48.8rem;
+  margin-bottom: 3.2rem;
+}
+.hero-section .text button {
   display: inline-block;
   height: 5.4rem;
   line-height: 5.4rem;
   background-color: #FFBF00;
-  color: #5F3CA1;
+  color: #482982;
   border-radius: 0.6rem;
   padding: 0 5rem;
   font-weight: 600;
   font-size: 1.6rem;
   cursor: pointer;
   transition: all 200ms ease-in-out;
+  margin-bottom: 8.6rem;
 }
-button:hover {
-  background-color: #5F3CA1;
+.hero-section .text button:hover {
+  background-color: #482982;
   color: #FFBF00;
+}
+.hero-section .know {
+  display: flex;
+  align-items: center;
+}
+.hero-section .know span {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: white;
+  margin-left: 1.6rem;
+}
+.hero-section .image {
+  position: relative;
+  top: 3.7rem;
 }/*# sourceMappingURL=main.min.css.map */
