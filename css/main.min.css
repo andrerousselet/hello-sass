@@ -18,4 +18,22 @@ html {
   max-width: 124.6rem;
   padding: 0 1.5rem;
   margin: 0 auto;
+}
+
+button {
+  display: inline-block;
+  height: 5.4rem;
+  line-height: 5.4rem;
+  background-color: #FFBF00;
+  color: #5F3CA1;
+  border-radius: 0.6rem;
+  padding: 0 5rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+button:hover {
+  background-color: #5F3CA1;
+  color: #FFBF00;
 }/*# sourceMappingURL=main.min.css.map */

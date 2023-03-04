@@ -1,0 +1,23 @@
+@mixin responsive($screenWidth) {
+  @media (max-width: $screenWidth) {
+    @content;
+  }
+}
+
+@mixin btn-style($height, $backgroundColor, $textColor) {
+  display: inline-block;
+  height: $height;
+  line-height: $height;
+  background-color: $backgroundColor;
+  color: $textColor;
+  border-radius: 0.6rem;
+  padding: 0 5rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  &:hover {
+    background-color: $textColor;
+    color: $backgroundColor;
+  }
+}
