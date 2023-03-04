@@ -4,6 +4,13 @@
   }
 }
 
+@mixin flex($direction, $align, $justify) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
 @mixin btn-style($height, $backgroundColor, $textColor) {
   display: inline-block;
   height: $height;

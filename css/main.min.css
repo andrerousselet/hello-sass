@@ -20,6 +20,39 @@ html {
   margin: 0 auto;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 11.9rem;
+  background-color: #5F3CA1;
+  display: flex;
+}
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+}
+header nav ul li:not(:first-child) {
+  margin-left: 5.6rem;
+}
+header nav ul li a {
+  display: flex;
+  align-items: center;
+}
+header nav ul li a span {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  margin-left: 1.6rem;
+  color: #FCFCFC;
+}
+
 button {
   display: inline-block;
   height: 5.4rem;
