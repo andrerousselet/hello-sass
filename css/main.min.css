@@ -13,6 +13,10 @@ html {
   font-size: 62.5%;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   width: 100%;
   max-width: 124.6rem;
@@ -51,6 +55,22 @@ header nav ul li a span {
   line-height: 1.9rem;
   margin-left: 1.6rem;
   color: #FCFCFC;
+}
+@media (max-width: 600px) {
+  header .container {
+    justify-content: center;
+  }
+  header nav {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    height: 8rem;
+  }
+  header .logo {
+    max-width: 14rem;
+  }
 }
 
 button {
