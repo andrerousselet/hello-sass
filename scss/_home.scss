@@ -51,4 +51,48 @@
     position: relative;
     top: 3.7rem;
   }
+
+  @include responsive(991px) {
+    .container {
+      flex-direction: column;
+    }
+
+    .text {
+      max-width: 100%;
+      margin-bottom: 3rem;
+
+      h1, p {
+        text-align: center;
+      }
+
+      p {
+        max-width: 100%;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+      }
+
+      .know {
+        justify-content: center;
+      }
+    }
+  }
+
+  @include responsive(600px) {
+    margin-top: 8rem;
+    padding-top: 2.5rem;
+
+    .text {
+      h1 {
+        font-size: 4.3rem;
+      }
+    }
+
+    .image {
+      left: -1.8rem;
+    }
+  }
 }
