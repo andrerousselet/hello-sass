@@ -30,7 +30,7 @@
 
     button {
       @include btn-style(5.4rem, $secondary, #482982);
-      margin-bottom: 8.6rem
+      margin-bottom: 8.6rem;
     }
   }
 
@@ -43,7 +43,7 @@
       font-size: 1.6rem;
       line-height: 1.9rem;
       color: white;
-      margin-left: 1.6rem
+      margin-left: 1.6rem;
     }
   }
 
@@ -61,7 +61,8 @@
       max-width: 100%;
       margin-bottom: 3rem;
 
-      h1, p {
+      h1,
+      p {
         text-align: center;
       }
 
@@ -94,5 +95,131 @@
     .image {
       left: -1.8rem;
     }
+  }
+}
+
+.resources-section {
+  padding: 14.9rem 0 9.9rem 0;
+
+  .top {
+    @include flex(row, center, space-between);
+    margin-bottom: 5.3rem;
+
+    h2 {
+      font-family: "PT Sans", sans-serif;
+      font-weight: 600;
+      font-size: 3.2rem;
+      line-height: 130%;
+      color: $gray-01;
+      max-width: 50.2rem;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 1.6rem;
+      line-height: 150%;
+      color: $gray-02;
+    }
+  }
+
+  .bottom-cards {
+    @include flex(row, flex-start, space-evenly);
+
+    .card {
+      padding: 4rem;
+
+      .icon {
+        width: 6.4rem;
+        height: 6.4rem;
+        background-color: rgba(197, 190, 220, 0.1);
+        border-radius: 1.2rem;
+        margin-bottom: 3rem;
+        @include flex(row, center, center);
+      }
+
+      .info {
+        max-width: 20.4rem;
+
+        h4 {
+          font-weight: 600;
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          color: $primary;
+          margin-bottom: 2rem;
+        }
+
+        p {
+          font-size: 1.6rem;
+          line-height: 165%;
+          color: $gray-02;
+        }
+      }
+    }
+
+    .card.grey {
+      background-color: rgba(197, 190, 220, 0.1);
+      max-width: 28rem;
+      height: 32.3rem;
+      width: 100%;
+      border-radius: 1.2rem;
+
+      .icon {
+        background-color: white;
+      }
+    }
+  }
+
+  @include responsive(991px) {
+    .bottom-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: fit-content fit-content;
+
+      .card.grey {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        max-width: 100%;
+        height: fit-content;
+        @include flex(column, center, center);
+
+        .info {
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @include responsive(768px) {
+    padding: 10rem 0 5rem 0;
+
+    .top {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  @include responsive(480px) {
+    padding-top: 6rem;
+
+    .bottom-cards {
+      @include flex(column, center, center);
+
+      .card {
+        @include flex(column, center, center);
+        width: 100%;
+        padding: 3rem;
+
+        .info {
+          max-width: 100%;
+          text-align: center;
+        }
+      }
+    }
+
   }
 }
